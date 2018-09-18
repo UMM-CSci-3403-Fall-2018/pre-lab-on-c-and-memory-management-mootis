@@ -46,6 +46,8 @@ char* strip(char* str) {
   // Place the null terminator at the end of the result string.
   result[i-first_non_space] = '\0';
 
+  free(result);
+
   return result;
 }
 
